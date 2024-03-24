@@ -203,7 +203,7 @@ def read_code_page():
 
                 data = json.load(file_json)
 
-                for i in range(0, len(data["rows"])):
+                for i in range(0, len(data["rows"]) + 1):
 
                     #settleDate = json.dumps(data['rows'][i]['settleDate'], ensure_ascii=False)
                     get_settleDate = data['rows'][i]['settleDate'] # Преобразуем строку в формат datetime

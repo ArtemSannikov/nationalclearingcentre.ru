@@ -192,7 +192,7 @@ def read_code_page():
 
                 data = json.load(file_json)
 
-                for i in range(0, len(data["rows"])):
+                for i in range(0, len(data["rows"]) + 1):
 
                     # Заменяем ' на '', чтобы можно было добавлять значения с ' ковычкой в поле таблицы.
                     # Здесь будет ошибка: insert into таблица (поле) values ('BJ'sWholes');
