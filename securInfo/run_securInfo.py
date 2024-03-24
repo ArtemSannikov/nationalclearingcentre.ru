@@ -237,13 +237,13 @@ def read_code_page():
                     gcOfz = json.dumps(data['rows'][i]['gcOfz'], ensure_ascii=False)
                     gcMetal = json.dumps(data['rows'][i]['gcMetal'], ensure_ascii=False)
 
-                    # Поле maturityDate может быть null, а может содержать дату. Поэтому обрабатываем эти варианта.
+                    # Поле maturityDate может быть null, а может содержать дату. Поэтому обрабатываем эти варианты.
                     get_maturityDate = json.dumps(data['rows'][i]['maturityDate'], ensure_ascii=False)
 
                     if get_maturityDate == 'null':
                         maturityDate = 'null'
                     else:
-                        get_maturityDate_datetime_obj = datetime.strptime(get_tradeDate, '%Y-%m-%dT%H:%M:%S')
+                        get_maturityDate_datetime_obj = datetime.strptime(get_maturityDate, '%Y-%m-%dT%H:%M:%S')
                         maturityDate = "'" + get_maturityDate_datetime_obj.strftime("%d.%m.%Y") + "'"
 
                     # Добавляем строку в оператор INSERT INTO
