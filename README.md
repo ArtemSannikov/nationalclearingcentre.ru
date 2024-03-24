@@ -4,7 +4,7 @@
 ### Метод
 * Параметры ценных бумаг ([securInfo](https://www.nationalclearingcentre.ru/rates/securInfo))
 * Параметры драгоценных металлов и иностранной валюты ([assetInfo](https://www.nationalclearingcentre.ru/rates/assetInfo))
-* Расчетные цены на валютном рынке ([settlementPrices](https://www.nationalclearingcentre.ru/rates/settlementPrices)) - В разработке
+* Расчетные цены на валютном рынке ([settlementPrices](https://www.nationalclearingcentre.ru/rates/settlementPrices))
 * Календарь расчетных дней ([settleDates](https://www.nationalclearingcentre.ru/rates/settleDates))
 
 ### Необходимые пакеты Python
