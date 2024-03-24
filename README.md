@@ -5,7 +5,7 @@
 * Параметры ценных бумаг ([securInfo](https://www.nationalclearingcentre.ru/rates/securInfo))
 * Параметры драгоценных металлов и иностранной валюты ([assetInfo](https://www.nationalclearingcentre.ru/rates/assetInfo))
 * Риск-параметры ([settlementPrices](https://www.nationalclearingcentre.ru/rates/settlementPrices)) - В разработке
-* Календарь расчетных дней ([settleDates](https://www.nationalclearingcentre.ru/rates/settleDates)) - В разработке
+* Календарь расчетных дней ([settleDates](https://www.nationalclearingcentre.ru/rates/settleDates))
 
 ### Необходимые пакеты Python
 * ```bs4``` (получение DOM-дерева страницы, [подробнее..](https://pypi.org/project/beautifulsoup4/));
