@@ -92,7 +92,6 @@ def get_code_page():
 
         # В цикле проходимся по всем страницам метода и сохраняем их в отдельные файлы
         for page_method in range(1, total_page_method + 1):
-        #for page_method in range(1, 6):
 
             # Отправляем запрос на сервер
             api_page_method = f"https://www.nationalclearingcentre.ru/api/v1/rates/securInfo?lang=ru&pageNumber={page_method}&settleDate={REQUIRED_DATE}"
@@ -243,7 +242,7 @@ def read_code_page():
                     if get_maturityDate == 'null':
                         maturityDate = 'null'
                     else:
-                        get_maturityDate_datetime_obj = datetime.strptime(get_maturityDate, '%Y-%m-%dT%H:%M:%S')
+                        get_maturityDate_datetime_obj = datetime.strptime(data['rows'][i]['maturityDate'], '%d.%m.%Y')
                         maturityDate = "'" + get_maturityDate_datetime_obj.strftime("%d.%m.%Y") + "'"
 
                     # Добавляем строку в оператор INSERT INTO
